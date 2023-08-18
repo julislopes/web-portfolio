@@ -1,0 +1,228 @@
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black !important;
+}
+
+.bg-transparent {
+    transition: 5.8s;
+    transition-property: hight;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,.55);
+	border-color: rgba(255,255,255,.1);
+}
+
+
+/* hero background image */
+.profile-img {
+    height:100vh;
+    background: url('images/australia.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    position:relative;
+}
+/* text css above hero image*/
+.hero_title {
+    font-size: 65px;
+}
+.hero_sub-title {
+    font-size: 32px;
+}
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center; 
+}
+
+.div2 /* used on  homepage */
+{
+	margin-left: 100px; 
+	margin-right:100px;
+	text-align: left;
+	font-size: 16px;
+	padding: 20px;
+}
+
+
+table, tr, th, td 
+{
+	border-collapse: collapse;
+	margin: 5px;
+	padding: 2px;
+	border: 3px rgb(1, 1, 23) solid;
+	border-radius: 5px;
+	text-align: center;
+	margin-right:30px;
+	margin-left:20px;
+    color: black;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+li
+{
+	color:white;
+	text-align: justify;
+}
+
+
+.card-body:hover{
+	color: white;
+	background-color: black(17, 1, 32);
+	border-style: dashed;
+	border-color:rgb(88, 13, 193);
+	text-align: center;
+}
+
+.card-body{
+	color: white;
+	background-color: #000000;
+	border-style: dashed;
+	border-color: silver;
+	text-align: center;
+}
+
+/*Resume Button Animation below: */
+
+/*animation-name: changeColor; */
+@keyframes changeColor {
+	0% {
+	  background-color:  white;
+	  transform: translateY(0);
+	}
+	  
+	100% {
+	  color: rgba(65, 56, 146, 0.886);
+	  transform: translateY(30px);
+	}
+}
+  
+buttonC {
+	animation: changeColor 3s linear infinite alternate; /* animation-duration: 3s; || animation-timing-function: linear; */
+													/* animation-iteration-count: infinite; || animation-direction: alternate; */
+}
+    
+/*** Additional styling below ***/
+buttonC {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	border: 2px solid black;
+	box-shadow: 0 24px 88px -5px white;
+	cursor: pointer;
+	font-family: "Helvetica", sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	letter-spacing: 0.03em;
+	margin-top: 20vh;
+	padding: 0.5em 1em;;
+}
+
+.div3 /* used to adapt resume link */
+{
+	margin-left: 200px; 
+	margin-right:200px;
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.slideshow-container{
+	text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 70%;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: relative;
+	bottom: 200px;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: rgb(6, 3, 0);
+	font-weight: bold;
+	font-size: 45px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+	right: 300px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the left */
+.next{
+	left: 300px;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	color:#e6933b;
+}
+
+/* Caption text */
+.text {
+	color: #e6933b;
+	font-size: 18px;
+	font-weight: 800;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
