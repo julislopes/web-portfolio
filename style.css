@@ -1,0 +1,334 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* display background color black on navbar scroll */
+.navbarScroll.navbarDark {
+    background-color: black !important;
+}
+
+.bg-transparent {
+    transition: 5.8s;
+    transition-property: hight;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-dark .navbar-toggler {
+	color: rgba(255,255,255,.55);
+	border-color: rgba(255,255,255,.1);
+}
+
+
+
+
+
+.profile-img {
+    height: 100vh;
+    background: url('images/australia.png') left center/cover no-repeat;
+    position: relative;
+}
+
+/* hero background image
+.profile-img {
+    height:100vh;
+    background: url('images/australia.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+	background-position:center;
+    position:relative;
+} */
+
+
+
+/* cria divisão esquerda (imagem já está no background) e direita (preta) */
+.hero-wrapper {
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end; /* joga conteúdo pra direita */
+    align-items: center;
+
+    padding-right: 80px;
+
+    /* cria lado direito preto */
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(0,0,0,0) 50%,
+        rgba(0,0,0,0.85) 50%
+    );
+}
+
+/* texto no lado direito */
+.hero-text {
+    color: white;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+/* .hero-text {
+    position: relative !important;
+    transform: none !important;
+-    top: auto !important;
+ -   left: auto !important;
+
+    color: white;
+    - text-align: left;
+
+    -display: flex;
+    -flex-direction: column;
+    -justify-content: center;
+
+    min-height: 100vh;
+    padding-left: 60px;
+} */
+
+
+
+/* text css above hero image
+.hero_title {
+    font-size: 65px;
+} */
+
+.hero_title {
+    font-size: 65px;
+}
+
+.hero_sub-title {
+    font-size: 32px;
+}
+
+/* 
+.hero_sub-title {
+    font-size: 32px;
+}
+ */
+
+
+
+
+/* spacing on all sections */
+#about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+}
+#contact {
+    padding-bottom: 4rem;
+}
+
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center; 
+}
+
+.div2 /* used on  homepage */
+{
+	margin-left: 100px; 
+	margin-right:100px;
+	text-align: left;
+	font-size: 16px;
+	padding: 20px;
+}
+
+
+table, tr, th, td 
+{
+	border-collapse: collapse;
+	margin: 5px;
+	padding: 2px;
+	border: 3px rgb(1, 1, 23) solid;
+	border-radius: 5px;
+	text-align: center;
+	margin-right:30px;
+	margin-left:20px;
+    color: black;
+}
+
+ul{
+    list-style-type: disc;
+}
+
+li
+{
+	color:white;
+	text-align: justify;
+}
+
+
+.card-body:hover{
+	color: white;
+	background-color: black;
+	border-style: dashed;
+	border-color:rgb(88, 13, 193);
+	text-align: center;
+}
+
+.card-body{
+	color: white;
+	background-color: #000000;
+	border-style: dashed;
+	border-color: silver;
+	text-align: center;
+}
+
+/*Resume Button Animation below: */
+
+/*animation-name: changeColor; */
+@keyframes changeColor {
+	0% {
+	  background-color:  white;
+	  transform: translateY(0);
+	}
+	  
+	100% {
+	  color: rgba(65, 56, 146, 0.886);
+	  transform: translateY(30px);
+	}
+}
+  
+#buttonC {
+	animation: changeColor 3s linear infinite alternate; /* animation-duration: 3s; || animation-timing-function: linear; */
+													/* animation-iteration-count: infinite; || animation-direction: alternate; */
+}
+    
+/*** Additional styling below ***/
+#buttonC {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	border: 2px solid black;
+	box-shadow: 0 24px 88px -5px white;
+	cursor: pointer;
+	font-family: "Helvetica", sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	letter-spacing: 0.03em;
+	margin-top: 20vh;
+	padding: 0.5em 1em;;
+}
+
+.div3 /* used to adapt resume link */
+{
+	text-align: center;
+	font-size: 18px;
+	padding: 20px;
+	font-weight: bold;
+}
+
+.slideshow-container{
+	text-align: center;
+}
+/* Slideshow container */
+.slideshow-container {
+	max-width: 70%;
+	position: relative;
+	margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: relative;
+	bottom: 200px;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: rgb(6, 3, 0);
+	font-weight: bold;
+	font-size: 45px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "previous button" to the left */
+.prev {
+	right: 300px;
+	border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the left */
+.next{
+	left: 300px;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	color:#e6933b;
+}
+
+/* Caption text */
+.text {
+	color: #e6933b;
+	font-size: 18px;
+	font-weight: 800;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+/* @media “aplique essas regras apenas em telas menores” */
+@media (max-width: 768px){
+
+    .hero_title{
+        font-size: 2.8rem;
+    }
+
+    .hero_sub-title{
+        font-size: 1.3rem;
+    }
+
+    .hero-text{
+        left: 50%;
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+/* Ozzy life arrows - @media “aplique essas regras apenas em telas menores” */
+@media (max-width:768px){
+    .prev{
+        right: 50px;
+    }
+    .next{
+        left: 50px;
+    }
+}
