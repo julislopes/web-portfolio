@@ -3,7 +3,7 @@
 <head>
   <title>Portfolio Website- Juliana</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- linking css file -->
   <link rel="stylesheet" href="style.css">
   <!-- bootstrap CDN -->
@@ -33,24 +33,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">  <!-- To add links inside the navbar, use a <ul> element with class="navbar-nav".  -->
-                    <li class="nav-item active"> <!-- Then add <li> elements with a .nav-item class followed by an <a> element with a .nav-link class: -->
+                    <!-- menu item for Home -->
+					<li class="nav-item active"> <!-- Then add <li> elements with a .nav-item class followed by an <a> element with a .nav-link class: -->
                         <a class="nav-link" href="#home">Home</a> 
                     </li>
+					<!-- menu item for About -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class=" nav-link dropdown-toggle"  data-bs-toggle="dropdown">Education 
-                        <span class="caret"></span></a>
-                        <ul class="dropdown-menu dropdown-menu-dark">  <!-- dropdown-menu-dark: makes the dropdown menu dark -->
-                            <li><a class="dropdown-item" href="#background">Academic Background</a></li>
-                            <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item active">
+					<!-- dropdown menu for Education -->
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Education</a>
+						<ul class="dropdown-menu dropdown-menu-dark"> <!-- dropdown-menu-dark: makes the dropdown menu dark -->
+							<li><a class="dropdown-item" href="#background">Academic Background</a></li>
+							<li><a class="dropdown-item" href="#skills">Skills</a></li>
+						</ul>
+					</li>
+					<!-- menu item for Abroad -->
                     <li class="nav-item">
                         <a class="nav-link" href="#abroad">Abroad</a>
                     </li>
+					<!-- menu item for Contact -->
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
@@ -59,7 +62,7 @@
         </div>
     </nav>   
 
-    <!-- main banner -->
+    <!-- main banner -->	
     <section class="profile-img" id="home">
         <div class="hero-wrapper">
             <div class="hero-text">
@@ -79,9 +82,7 @@
             <div class="row py-5">
                 <div class="col-md-3">
 					<!--
-						img-fluid do Bootstrap deixa a imagem responsiva automaticamente:
-						max-width: 100%;
-						height: auto;
+						img-fluid do Bootstrap deixa a imagem responsiva automaticamente: (max-width: 100%; height: auto;)
 					-->
 					<img src="images/profile.jpg" class="img-fluid rounded imageAboutPage" alt="">
                 </div>
@@ -117,13 +118,13 @@
         <div class="container mt-5 pt-4">
             <h1 class="text-center">Academic Background</h1>
             <div class="row mt-4 pt-4 pb-5 mb-5">
-                <div class=" table-responsive col-lg-12 mt-12">
+				<div class="table-wrapper col-lg-12 mt-12">
                     <table class="table table-bordered table-hover">
                         <thead>
                             <colgroup>
-                                <col span="5" style="background-color:mintcream" >
+                                <col span="5" style="background-color:cream" >
                             </colgroup>
-                            <tr style="background-color:black; font-size: 18px;"> 
+                            <tr style="background-color: black; font-size: 18px;"> 
                                 <th>Course</th>
                                 <th>Institution</th>
                             </tr>
@@ -137,23 +138,23 @@
                                 <td> <b>Bachelor of Information Technology (BIT)</b> </td>
                                 <td> <a href="https://www.scu.edu.au/study-at-scu/courses/bachelor-of-information-technology-3002111/" target="_blank" style="color: black">Southern Cross University</a>, Perth</td>
                             </tr>
-                            <tr>
-                                <td> Bachelor of Pharmacy</td>
-                                <td> UEZO, Brazil</td>
-                            </td>
-                            </tr>
-			    <tr>
-                                <td> Hospital Pharmacy Residency Program (Postgraduate) </td>
-                                <td> Universidade Federal Fluminense, Brazil</td>
-							</tr>
-                            <tr>
+                               <tr>
                                 <td> Certificate 4 in Project Management</td>
-                                <td> SELC, Brisbane</td>
+                                <td> SELC, Sydney</td>
                             </tr>
                             <tr>
                                 <td> Certificate 4 in Marketing and Communication </td>
                                 <td> Australian Pacific College, Brisbane</td>
                             </tr>
+							<tr>
+                                <td> Bachelor of Pharmacy</td>
+                                <td> UEZO, Brazil</td>
+                            </td>
+                            </tr>
+							<tr>
+                                <td> Hospital Pharmacy Residency Program (Postgraduate) </td>
+                                <td> Universidade Federal Fluminense, Brazil</td>
+							</tr>
                         </tbody>
                     </table>	        
                 </div>
