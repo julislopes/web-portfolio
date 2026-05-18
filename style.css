@@ -7,7 +7,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -76,7 +76,6 @@ img {
     text-align: center;
 }
 
-
 .hero_title {
     font-size: 65px;
 }
@@ -84,6 +83,7 @@ img {
 .hero_sub-title {
     font-size: 32px;
 }
+
 
 
 /* spacing on all sections */
@@ -134,11 +134,21 @@ table, tr, th, td
 }
 table, tr, th
 {
-    color:rgba(255,255,255,.55); /* same color of menu bar*/
+    color:white; /* same color of menu bar*/
 }
 td
 {
     color:black; /* same color of menu bar*/
+}
+
+ul{
+    list-style-type: disc;
+}
+
+li
+{
+	color:white;
+	text-align: justify;
 }
 
 
@@ -285,5 +295,24 @@ td
     }
     .next{
         left: 50px;
+    }
+}
+
+
+/* academic background section - table resposive*/
+.table-wrapper {
+    width: 100%;
+}
+
+/* Scroll apenas no mobile */
+@media (max-width: 768px) {
+
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .table-wrapper table {
+        min-width: 600px;
     }
 }
