@@ -1,3 +1,112 @@
+
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+.hero{
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url('images/australia.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    overflow: hidden;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:black;
+}
+
+.content{
+    position: relative;
+    z-index: 2;
+
+    color:white;
+
+    padding:20px;
+    max-width: 900px;
+}
+
+.content h1{
+  font-size:4rem;
+  margin-bottom:20px;
+}
+
+.content p{
+  font-size:1.5rem;
+  line-height:1.4;
+  margin-bottom:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+
+  border:2px solid white;
+  color:white;
+  text-decoration:none;
+
+  font-size:1rem;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+
+  .hero{
+    min-height:100vh;
+    padding:30px 20px;
+  }
+
+  .content h1{
+    font-size:2.5rem;
+  }
+
+  .content p{
+    font-size:1.1rem;
+  }
+
+  .btn{
+    width:100%;
+    max-width:280px;
+    font-size:0.95rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -6,10 +115,6 @@ body {
     overflow-x: hidden;
 }
 
-img {
-    max-width: 50%;
-    height: auto;
-}
 
 /* display background color black on navbar scroll */
 .navbarScroll.navbarDark {
@@ -21,9 +126,11 @@ img {
     transition-property: hight;
 }
 
+
+
 .navbar-toggler {
     padding: 0.25rem 0.75rem;
-    font-size: 1.25rem;
+    font-size: 4.25rem;
     line-height: 1;
     background-color: transparent;
     border: 1px solid transparent;
@@ -35,95 +142,6 @@ img {
 	color: rgba(255,255,255,.55);
 	border-color: rgba(255,255,255,.1);
 }
-
-
-
-
-
-.profile-img {
-    height: 100vh;
-    background: url('images/australia.png') left center/cover no-repeat;
-    position: relative;
-}
-
-/* hero background image
-.profile-img {
-    height:100vh;
-    background: url('images/australia.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-	background-position:center;
-    position:relative;
-} */
-
-
-
-/* cria divisão esquerda (imagem já está no background) e direita (preta) */
-.hero-wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end; /* joga conteúdo pra direita */
-    align-items: center;
-
-    padding-right: 80px;
-
-    /* cria lado direito preto */
-    width: 100%;
-    background: linear-gradient(
-        to right,
-        rgba(0,0,0,0) 50%,
-        rgba(0,0,0,0.85) 50%
-    );
-}
-
-/* texto no lado direito */
-.hero-text {
-    color: white;
-    max-width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: center;
-}
-
-/* .hero-text {
-    position: relative !important;
-    transform: none !important;
--    top: auto !important;
- -   left: auto !important;
-
-    color: white;
-    - text-align: left;
-
-    -display: flex;
-    -flex-direction: column;
-    -justify-content: center;
-
-    min-height: 100vh;
-    padding-left: 60px;
-} */
-
-
-
-/* text css above hero image
-.hero_title {
-    font-size: 65px;
-} */
-
-.hero_title {
-    font-size: 65px;
-}
-
-.hero_sub-title {
-    font-size: 32px;
-}
-
-/* 
-.hero_sub-title {
-    font-size: 32px;
-}
- */
 
 
 
@@ -144,12 +162,12 @@ img {
     cursor: pointer;
 }
 
-.fab {
-    color: #000000;
+.fa {
+    color:silver;
 }
 /* footer styling */
 #footer {
-    background-color: #808080;
+    background-color:black;
     text-align: center; 
 }
 
@@ -173,8 +191,16 @@ table, tr, th, td
 	text-align: center;
 	margin-right:30px;
 	margin-left:20px;
-    color: black;
 }
+table, tr, th
+{
+    color:rgba(255,255,255,.55); /* same color of menu bar*/
+}
+td
+{
+    color:black; /* same color of menu bar*/
+}
+
 
 ul{
     list-style-type: disc;
@@ -182,7 +208,7 @@ ul{
 
 li
 {
-	color:white;
+	color:black;
 	text-align: justify;
 }
 
